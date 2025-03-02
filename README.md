@@ -4,6 +4,18 @@ Generated with [vike.dev/new](https://vike.dev/new) ([version 405](https://www.n
 bun create vike@latest --vue --tailwindcss --authjs --hono --google-analytics --aws
 ```
 
+## ERROR
+when run with 'bun run dev' there is a cli console error
+```sh
+8:43:32 am [vike][request(2)] HTTP response /lib/utils.js 404
+```
+when run in the browser there is a browser console error
+```sh
+Uncaught (in promise) TypeError: Failed to fetch dynamically imported module: http://localhost:3000/@id/__x00__virtual:vike:pageConfigValuesAll:client:/pages/index
+```
+when run with 'bun run build' and then 'bun run preview' the errors are not there.
+
+
 ## Contents
 
 * * [`/pages/+config.ts`](#pagesconfigts)
