@@ -15,6 +15,10 @@ Uncaught (in promise) TypeError: Failed to fetch dynamically imported module: ht
 ```
 when run with 'bun run build' and then 'bun run preview' the errors are not there.
 
+when hono-entry.ts is updated to not server files in /lib the HTTP 404 error goes away!
+however, the TypeError continues to stop the app working in the browser.
+
+again, when running 'bun run build' and 'bun run preview' all errors are gone.
 
 ## Contents
 
