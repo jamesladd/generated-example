@@ -22,6 +22,7 @@ app.post("/api/todo/create", createHandler(createTodoHandler)());
  *
  * @link {@see https://vike.dev}
  **/
+app.get('/lib/*', (c) => c.notFound())
 app.all("*", createHandler(vikeHandler)());
 
 export default app;
