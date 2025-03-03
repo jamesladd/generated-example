@@ -14,7 +14,7 @@ export default defineConfig({
 
       exclude: [
         /^\/@.+$/,
-        /.*\.(ts|tsx|vue)($|\?)/,
+        /.*\.(ts|tsx|vue|js)($|\?)/,
         /.*\.(s?css|less)($|\?)/,
         /^\/favicon\.ico$/,
         /.*\.(svg|png)($|\?)/,
