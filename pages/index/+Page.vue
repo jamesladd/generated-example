@@ -10,6 +10,6 @@
 
 <script setup>
 import Counter from "../../components/Counter.vue";
-import { helloworld } from "../../lib/utils.js";
-helloworld()
+import { helloworld } from "@/lib/utils";
+helloworld();
 </script>
