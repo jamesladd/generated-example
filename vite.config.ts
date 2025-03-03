@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import devServer from "@hono/vite-dev-server";
 import { defineConfig } from "vite";
 import vike from "vike/plugin";
+import { resolve } from "path";
 
 export default defineConfig({
   plugins: [
@@ -29,6 +30,11 @@ export default defineConfig({
     }),
     md({}),
   ],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, ""),
+    },
+  },
   build: {
     target: "es2022",
   },

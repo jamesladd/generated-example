@@ -22,6 +22,9 @@
       "vitest/globals",
       "@types/which"
     ],
+    "paths": {
+      "@/*": ["./*"]
+    },
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },

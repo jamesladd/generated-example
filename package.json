@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "vike dev",
+    "dev": "bunx --bun vike dev",
     "build": "vike build",
     "preview": "cross-env NODE_ENV=production tsx ./hono-entry.node.ts",
     "test": "vitest",
